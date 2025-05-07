@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lelive best selling products" />
+    <title>Lelive | Best Sellers</title>
+
+    <!--References: I used https://www.aesop.com/uk/ and https://lelive.uk/ as inspiration for this product - I used their imagery to create my page -->
+
+    <!-- bootstrap stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- my custom stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- first row -->
+    <div class="row">
+      <div id="row-1" class="col-md-12">
+        <nav aria-label="Main Navigation">
+          <ul id="nav-bar" class="d-flex align-items-center list-unstyled">
+            <!-- logo on the left -->
+            <li class="me-auto">
+              <img
+                id="nav-logo"
+                src="images/lelive-logo.avif"
+                alt="lelive logo"
+                class="img-fluid"
+              />
+            </li>
+
+            <!-- nav items on the right; visual only - not functioning -->
+            <li class="mx-3">
+              <a href="#row-3">Products</a>
+            </li>
+            <!-- used stackoverflow and https://getbootstrap.com/docs/4.0/utilities/spacing/ to solve adding spacing with boostrap-->
+            <li class="mx-3">Cart</li>
+            <li class="mx-3">Account</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 2nd row -->
+    <div id="row-2" class="row">
+      <div class="col-md-8" id="intro">
+        <h2>Best sellers</h2>
+        <p>
+          Where nature meets the precision of science, and the spirit of Africa
+          comes alive. Our journey is built on love for the land, for the
+          natural world, and for beauty that celebrates diversity and
+          individuality.
+        </p>
+      </div>
+    </div>
+
+    <!-- 10 products layout in grid and columns using bootstrap -->
+    <!-- 3rd row -->
+    <div id="row-3" class="row">
+      <div class="col-md-4 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-1.avif"
+            class="main-image img-fluid"
+            alt="the drip product image"
+          />
+          <img
+            src="images/product-1-hover.avif"
+            class="hover-image img-fluid"
+            alt="the drip product image"
+          />
+        </div>
+        <!-- using img-fluid class to make images responsive -->
+        <p class="product-name">The Drip</p>
+        <!--displaying a price and name for each product-->
+        <p class="product-price">R550</p>
+        <button>Buy now</button>
+        <!-- button under each product to “buy"; not functional -->
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-2.avif"
+            class="main-image img-fluid"
+            alt="du pont product image"
+          />
+          <img
+            src="images/product-2-hover.avif"
+            class="hover-image img-fluid"
+            alt="du pont product image"
+          />
+        </div>
+        <p class="product-name">Du Pont</p>
+        <p class="product-price">R499</p>
+        <button>Buy now</button>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-3.avif"
+            class="main-image img-fluid"
+            alt="all the shade product image"
+          />
+          <img
+            src="images/product-3-hover.avif"
+            class="hover-image img-fluid"
+            alt="all the shade product image"
+          />
+        </div>
+        <p class="product-name">All the Shade</p>
+        <p class="product-price">R550</p>
+        <button>Buy now</button>
+      </div>
+    </div>
+
+    <!-- 4th row -->
+    <div id="row-4" class="row">
+      <div class="col-md-8 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-4.avif"
+            class="main-image img-fluid"
+            alt="the glo kit product image"
+          />
+          <img
+            src="images/product-4-hover.avif"
+            class="hover-image img-fluid"
+            alt="the glo kit product image"
+          />
+        </div>
+        <p class="product-name">The Glo Kit</p>
+        <p class="product-price">R1400</p>
+        <button>Buy now</button>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-5.avif"
+            class="main-image img-fluid"
+            alt="jelly splash product image"
+          />
+          <img
+            src="images/product-5-hover.avif"
+            class="hover-image img-fluid"
+            alt="jelly splash product image"
+          />
+        </div>
+        <p class="product-name">Jelly Splash</p>
+        <p class="product-price">R350</p>
+        <button>Buy now</button>
+      </div>
+    </div>
+
+    <!-- 5th row -->
+    <div id="row-5" class="row">
+      <div class="col-md-6 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-6.avif"
+            class="main-image img-fluid"
+            alt="creme de la cream product image"
+          />
+          <img
+            src="images/product-6-hover.avif"
+            class="hover-image img-fluid"
+            alt="creme de la cream product image"
+          />
+        </div>
+        <p class="product-name">Ceme de la Cream</p>
+        <p class="product-price">R1350</p>
+        <button>Buy now</button>
+      </div>
+      <div class="col-md-6 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-7.avif"
+            class="main-image img-fluid"
+            alt="cleaner colada product image"
+          />
+          <img
+            src="images/product-7-hover.avif"
+            class="hover-image img-fluid"
+            alt="cleaner colada product image"
+          />
+        </div>
+        <p class="product-name">Cleaner Colada</p>
+        <p class="product-price">R380</p>
+        <button>Buy now</button>
+      </div>
+    </div>
+
+    <!-- 6th row -->
+    <div id="row-6" class="row">
+      <div class="col-md-4 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-8.avif"
+            class="main-image img-fluid"
+            alt="oil la la product image"
+          />
+          <img
+            src="images/product-8-hover.avif"
+            class="hover-image img-fluid"
+            alt="oil la la product image"
+          />
+        </div>
+        <p class="product-name">Oil la la</p>
+        <p class="product-price">R380</p>
+        <button>Buy now</button>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="product-container">
+          <img
+            src="images/product-9.avif"
+            class="main-image img-fluid"
+            alt="clean slate product image"
+          />
+          <img
+            src="images/product-9-hover.avif"
+            class="hover-image img-fluid"
+            alt="clean slate product image"
+          />
+        </div>
+        <p class="product-name">Clean Slate</p>
+        <p class="product-price">R280</p>
+        <button>Buy now</button>
+      </div>
+      <div class="col-md-4">
+        <div class="product-container">
+          <img
+            src="images/product-10.avif"
+            class="main-image img-fluid"
+            alt="in good hands product image"
+          />
+          <img
+            src="images/product-10-hover.avif"
+            class="hover-image img-fluid"
+            alt="in good hands product image"
+          />
+        </div>
+        <p class="product-name">In Good Hands</p>
+        <p class="product-price">R220</p>
+        <button>Buy now</button>
+      </div>
+    </div>
+
+    <!-- 7th row -->
+    <div id="row-7" class="row">
+      <div class="col-md-5">
+        <a href="#nav-logo"
+          ><img
+            src="images/lelive-logo.avif"
+            alt="lelive logo"
+            class="img-fluid"
+        /></a>
+      </div>
+      <div class="col-md-7">
+        <footer>
+          <form class="form-horizontal" aria-labelledby="form-title">
+            <!-- footer - horizontal form gathering contact details with company logo -->
+            <p class="form-title" id="form-title">
+              Subscribe to Lelive communications
+            </p>
+
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+                aria-required="true"
+                aria-label="Email Address"
+              />
+            </div>
+
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="opt-in"
+                name="opt-in"
+                value="opt-in"
+                aria-labelledby="opt-in-label"
+              />
+              <label class="form-check-label" id="opt-in-label" for="opt-in">
+                By subscribing, you confirm you have read and understood our
+                privacy policy.
+              </label>
+            </div>
+
+            <button type="submit" id="submit-button">Subscribe</button>
+          </form>
+        </footer>
+      </div>
+    </div>
+
+    <!-- 8th row -->
+    <div id="row-8" class="row">
+      <footer id="copyright-footer" class="col-md-12">
+        &copy; 2025 Kristin Miller. All Rights Reserved
+      </footer>
+    </div>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
